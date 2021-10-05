@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Luís Gabriel da Silva">
+    <meta name="description" content="Site Playstation">
+    <meta name="keywords" content="site, playstation">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Playstation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Controles</a></li>
+                    <li><a href="">Acessórios de VR</a></li>
+                    <li><a href="">Remotos e Mídia</a></li>
+                    <li><a href="">Outros</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="toggleMenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2<br>Dualshock 4</h2>
+                <h3>Controle Playstation 4 sem fio</h3>
+                <p>(Compatível/Genérico)</p>
+                <h4>R$250,00</h4>
+                <button type="button">Compre Agora <img src="img/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png">
+                    <p><small>Adicionar ao carrinho</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/tw.png">
+            <img src="img/ig.png">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu(){
+
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
